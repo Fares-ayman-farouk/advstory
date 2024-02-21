@@ -22,7 +22,8 @@ class AdvStory extends StatefulWidget {
   /// ___
   /// [controller] :
   /// {@macro advstory.storyController}
-  const AdvStory({
+  // ignore: prefer_const_constructors_in_immutables
+  AdvStory({
     required this.storyCount,
     required this.storyBuilder,
     required this.trayBuilder,
@@ -41,7 +42,8 @@ class AdvStory extends StatefulWidget {
   /// ___
   /// [controller] :
   /// {@macro advstory.storyController}
-  const AdvStory.player({
+  // ignore: prefer_const_constructors_in_immutables
+  AdvStory.player({
     Key? key,
     required this.storyCount,
     required this.storyBuilder,
@@ -155,7 +157,7 @@ class _AdvStoryState extends State<AdvStory> with TickerProviderStateMixin {
   @override
   void initState() {
     _opacityController = AnimationController(
-      duration: const Duration(milliseconds: 150),
+      duration: Duration(milliseconds: 150),
       vsync: this,
       value: 1.0,
     );
@@ -220,7 +222,7 @@ class _AdvStoryState extends State<AdvStory> with TickerProviderStateMixin {
           style: widget.style,
           preloadStory: widget.preloadStory,
           preloadContent: widget.preloadContent,
-          child: const SizedBox.expand(child: StoryView()),
+          child: SizedBox.expand(child: StoryView()),
         );
       },
     );
