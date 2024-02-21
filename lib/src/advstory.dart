@@ -198,6 +198,9 @@ class _AdvStoryState extends State<AdvStory> with TickerProviderStateMixin {
 
   @override
   Widget build(BuildContext context) {
+    print(
+        "f;kasdjflksdjflksjdfkljsdlkjfklsdjfjsgdhjfgsdjfgjasgdjfgsdjhfgdjgfhjsgfjhsgdhjgfjhsdgfjsdgfjsgdjhf");
+
     if (widget.hasTrays) {
       return TrayView(
         buildHelper: _buildHelper,
